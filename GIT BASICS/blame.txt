@@ -1,0 +1,17 @@
+GIT BLAME FEATURES
+
+
+Tells us WHO edit what and when
+
+
+git blame <file name>
+
+git blame -e <file name> // show email instead of user name
+ 
+git blame -M <file name> // detect changes from within file
+
+git blame -C <file name> // detect edit from other files
+
+
+
+

@@ -1,0 +1,33 @@
+git stash
+
+Used to set apart not completed files, so as not to be committed.
+This will also work on already staged files.(added files).
+
+***Note that the stash is local 
+to your Git repository; 
+stashes are not transferred to the server when you push.
+
+**Git stash will only work on files that have been previously staged.
+
+Or files that have been ignored.
+
+This can all be changed however:
+
+git stash -u  // to include untracked files
+
+git stash -a   // to include ignored files
+
+
+Undo a stash
+
+git stash pop
+
+
+See what has been stashed 
+
+git stash list 
+
+
+View different stashes
+
+git stash show
