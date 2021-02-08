@@ -1,0 +1,7 @@
+git diff / or diffing 
+
+the diff command can be applied to many data sources including:
+commits
+branches
+files
+more...
