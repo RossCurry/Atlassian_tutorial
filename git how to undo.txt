@@ -1,0 +1,37 @@
+UNDOING CHANGES
+
+git log  // logs one branch, current
+
+git log --branchs=*    // shows logs across all branches
+
+git log --oneline  // shows the log in one line, great for finding the commit sha-1 numbers: 8999de8
+
+git checkout 8999de8  // travel to that commit, via the HEAD, "decapitated HEAD"
+
+**You can look at files, compile the project, run tests, and even edit files without worrying about losing the current state of the project. Nothing you do in here will be saved in your repository. To continue developing, you need to get back to the “current” state of your project:
+
+git checkout master  // now youre back to the beginning.
+
+Travel to a previous commit. then "undo" changes made after.
+
+git checkout <commit sha-1>
+
+git checkout -b <new branch name>  // this creates a new branch that takes the place of the previous, like going back in time and making a new detour.
+
+REVERT - **prefered method for shared branches
+
+git revert HEAD  // adds a new commit to the current branch. Still not too sure what it means
+
+
+
+RESET  -  **prefered method for local changes.
+
+git reset --hard <commit SHA-1>   // stay in the same branch, removes commits after this point.
+
+
+AMEND 
+git add   // add the changes you want
+git commit  --amend  // commits to the previous commit efectively undoing the previous one.
+
+
+ 
