@@ -16,3 +16,18 @@ This can all be changed however:
 git stash -u  // to include untracked files
 
 git stash -a   // to include ignored files
+
+
+Undo a stash
+
+git stash pop
+
+
+See what has been stashed 
+
+git stash list 
+
+
+View different stashes
+
+git stash show
