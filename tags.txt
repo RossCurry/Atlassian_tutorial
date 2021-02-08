@@ -1,0 +1,35 @@
+GIT TAGS
+
+
+
+ADDING TAGS
+
+git tag -a <tag name eg. v1.01>   // anotation tag that opens an editor and stores metadata
+
+
+git tag <tag name> // adds a lightweight tag
+
+
+LIST TAGS
+
+git tag
+
+
+PUSHING TAGS. - NOT AUTOMATIC
+
+git push <remote name> <tag name>
+
+git push <remote name> --tags   // this will push all tags
+
+
+
+MOVE TO A TAG. STATE OF FILES AT THAT MOMENT
+
+git checkout <tag name>
+
+***it is a best practice to create a new branch anytime you're making changes in a detached HEAD state.
+
+
+DELETE A TAG
+
+git tag -d <tag name>
